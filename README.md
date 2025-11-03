@@ -30,27 +30,27 @@ Define Parameters:
 
 program 
 
-import numpy as np
-import matplotlib.pyplot as plt
-Am =4
-Ac =8
-fm = 577
-fc = 5770
-fs = 57700
-t = np.arange(0, 2/fm, 1/fs) 
-m = Am * np.cos(2 * np.pi * fm * t) 
-plt.subplot(3, 1, 1) 
-plt.plot(t, m) 
-c = Ac * np.cos(2 * np.pi * fc * t) 
-plt.subplot(3, 1, 2) 
-plt.plot(t, c) 
-s1 = (Ac + m) * np.cos(2 * np.pi * fc * t) 
-s2 = (Ac - m) * np.cos(2 * np.pi * fc * t) 
-s = s1 - s2 
-plt.subplot(3, 1, 3) 
-plt.plot(t, s) 
-plt.tight_layout() 
-plt.show()
+    import numpy as np
+    import matplotlib.pyplot as plt
+    Am =4
+    Ac =8
+    fm = 577
+    fc = 5770
+    fs = 57700
+    t = np.arange(0, 2/fm, 1/fs) 
+    m = Am * np.cos(2 * np.pi * fm * t) 
+    plt.subplot(3, 1, 1) 
+    plt.plot(t, m) 
+    c = Ac * np.cos(2 * np.pi * fc * t) 
+    plt.subplot(3, 1, 2) 
+    plt.plot(t, c) 
+    s1 = (Ac + m) * np.cos(2 * np.pi * fc * t) 
+    s2 = (Ac - m) * np.cos(2 * np.pi * fc * t) 
+    s = s1 - s2 
+    plt.subplot(3, 1, 3) 
+    plt.plot(t, s) 
+    plt.tight_layout() 
+    plt.show()
 
 output 
 
