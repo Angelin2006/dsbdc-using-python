@@ -1,4 +1,5 @@
 dsbsc-using-python-ac
+
 AIM:
 
 To write a program to perform DSBSC modulation and demodulation using COLAB and study its spectral characteristics.
@@ -11,8 +12,20 @@ Note: Keep all the switch faults in off position
 
 Algorithm:
 
-Define Parameters: • Fs: Sampling frequency. • T: Duration of the signal. • Fc: Carrier frequency. • Fm: Frequency of the message signal. • Amplitude: Maximum amplitude of the message signal. Generate Signals: • Message Signal: A sinusoidal signal that will be modulated. • Carrier Signal: A high-frequency sinusoidal signal used for modulation. DSBSC Modulation: • Modulated Signal: Multiply the message signal by the carrier signal to produce the DSBSC signal. DSBSC Demodulation: • Multiplication: Multiply the modulated signal by the carrier signal to get the product of the message signal with itself (i.e., the original message signal plus high-frequency components). • Low-pass Filtering: Apply a Butterworth low-pass filter to remove the high- frequency components and recover the original message signal. Visualization: Plot the message signal, carrier signal, DSBSC modulated signal, and the recovered signal after demodulation. PROCEDURE • Refer Algorithms and write code for the experiment. • Open SCILAB in System • Type your code in New Editor • Save the file
-
+Define Parameters: 
+• Fs: Sampling frequency. 
+• T: Duration of the signal. 
+• Fc: Carrier frequency. 
+• Fm: Frequency of the message signal. 
+• Amplitude: Maximum amplitude of the message signal. Generate Signals: 
+• Message Signal: A sinusoidal signal that will be modulated. 
+• Carrier Signal: A high-frequency sinusoidal signal used for modulation. DSBSC Modulation: 
+• Modulated Signal: Multiply the message signal by the carrier signal to produce the DSBSC signal. DSBSC Demodulation: 
+• Multiplication: Multiply the modulated signal by the carrier signal to get the product of the message signal with itself (i.e., the original message signal plus high-frequency components). 
+• Low-pass Filtering: Apply a Butterworth low-pass filter to remove the high- frequency components and recover the original message signal. Visualization: Plot the message signal, carrier signal, DSBSC modulated signal, and the recovered signal after demodulation. PROCEDURE 
+• Refer Algorithms and write code for the experiment. 
+• Open SCILAB in System • Type your code in New Editor 
+• Save the file
 • Execute the code • If any Error, correct it in code and execute again • Verify the generated waveform using Tabulation and Model Waveform
 
 program 
@@ -21,9 +34,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 Am =4
 Ac =8
-fm = 377
-fc = 3770
-fs = 37700
+fm = 577
+fc = 5770
+fs = 57700
 t = np.arange(0, 2/fm, 1/fs) 
 m = Am * np.cos(2 * np.pi * fm * t) 
 plt.subplot(3, 1, 1) 
@@ -41,10 +54,11 @@ plt.show()
 
 output 
 
-<img width="784" height="579" alt="image" src="https://github.com/user-attachments/assets/d1b1d446-d96c-467f-a81d-842eb115fa93" />
+<img width="627" height="469" alt="dsbsc" src="https://github.com/user-attachments/assets/946de544-a583-4228-928e-f25d1c5e5d9b" />
 
 calculation 
 
+![WhatsApp Image 2025-11-03 at 23 10 40_b5fdedca](https://github.com/user-attachments/assets/dacab1a1-03ee-4674-b330-72885daca167)
 
 Result:
 
