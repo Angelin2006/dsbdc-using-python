@@ -58,7 +58,7 @@ output
 
 calculation 
 
-![WhatsApp Image 2025-11-03 at 23 10 40_b5fdedca](https://github.com/user-attachments/assets/dacab1a1-03ee-4674-b330-72885daca167)
+![WhatsApp Image 2025-12-01 at 09 58 52_3ef46cab](https://github.com/user-attachments/assets/d00c1a14-6112-4ab2-8c97-b39eb9077bde)
 
 Result:
 
